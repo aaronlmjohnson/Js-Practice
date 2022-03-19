@@ -1,5 +1,4 @@
 import { sentenceCase, reverseString, Calculator, caesarCipher, analyzeArray} from './jestTest';
-sentenceCase();
 
 it('capitalizes first character', ()=>{
     expect(sentenceCase('cake')).toBe('Cake');
