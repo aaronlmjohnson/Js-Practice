@@ -5,10 +5,6 @@ it('capitalizes first character', ()=>{
     expect(sentenceCase('cake')).toBe('Cake');
 });
 
-it('can add two numbers', ()=>{
-    expect(Calculator.sum(2, 2)).toBe(4);
-});
-
 it('reverse the string', ()=>{
     expect(reverseString('cake')).toBe('ekac');
 
