@@ -1,6 +1,7 @@
-export const sentenceCase = ()=>{
-    console.log('hi');
+export const sentenceCase = (str)=>{
+
 };
+
 
 export const reverseString = ()=>{
 
