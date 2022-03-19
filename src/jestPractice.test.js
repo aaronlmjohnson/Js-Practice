@@ -14,7 +14,7 @@ it('reverse the string', ()=>{
 describe('Calculator module', ()=>{
 
     it('can add two numbers', ()=>{
-        expect(Calculator.sum(2, 2)).toBe(4);
+        expect(Calculator.add(2, 2)).toBe(4);
     });
 
     it('can subtract two numbers', ()=>{
