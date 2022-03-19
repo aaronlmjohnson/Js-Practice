@@ -48,13 +48,24 @@ describe('Caesar Cipher funciton', ()=>{
 });
 
 describe('Analyze Array function', ()=>{
-    it('returns an object containing average, min, max, and length', ()=>{
-        expect(analyzeArray([1,8,3,4,2,6]).toBe({
-            average: 4,
-            min: 1,
-            max: 8,
-            length: 6
-          }));
+    it('returns an object', ()=>{
+        expect(typeof analyzeArray([1,8,3,4,2,6]).toBe('object'));
+    });
+
+    it('averages the numbers', ()=>{
+        expect(analyzeArray([1,8,3,4,2,6].average).toBeCloseTo(4));
+    });
+
+    it('finds the largest number', ()=>{
+        expect(analyzeArray([1,8,3,4,2,6].max).toBe(8));
+    });
+
+    it('finds the smallest number', ()=>{
+        expect(analyzeArray([1,8,3,4,2,6].min).toBe(1));
+    });
+
+    it('returns the size of the array', ()=>{
+        expect(analyzeArray([1,8,3,4,2,6].length).toBe(6));
     });
 });
 
