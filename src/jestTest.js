@@ -15,11 +15,24 @@ export const Calculator = (()=>{
     return {add, subtract, multiply, divide}
 })();
 
-export const caesarCipher = ()=>{
-
+export const caesarCipher = (str, shift = 1)=>{
+    return str.split('').map((char)=>{
+        if(char.match(/[a-zA-Z]/)){
+            let encryptedChar = numToChar(((charToNum(char)+ shift) % 26));
+            return isUpperCase(char) ? encryptedChar.toUpperCase() : encryptedChar;
+        } else 
+            return char;
+    }).join('');
 };
 
 export const analyzeArray = ()=>{
 
 };
+
+const charToNum = (char)=> 
+    'abcdefghijklmnopqrstuvwxyz'.indexOf(char.toLowerCase());
+
+const numToChar = (num) => 'abcdefghijklmnopqrstuvwxyz'[num];
+
+const isUpperCase = (char) => char.toUpperCase() === char;
 
