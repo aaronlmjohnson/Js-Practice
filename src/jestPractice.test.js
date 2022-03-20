@@ -55,19 +55,19 @@ describe('Analyze Array function', ()=>{
     });
 
     it('averages the numbers', ()=>{
-        expect(analyzeArray([1,8,3,4,2,6].average)).toBeCloseTo(4);
+        expect(analyzeArray([1,8,3,4,2,6]).average).toBeCloseTo(4);
     });
 
     it('finds the largest number', ()=>{
-        expect(analyzeArray([1,8,3,4,2,6].max)).toBe(8);
+        expect(analyzeArray([1,8,3,4,2,6]).max).toBe(8);
     });
 
     it('finds the smallest number', ()=>{
-        expect(analyzeArray([1,8,3,4,2,6].min)).toBe(1);
+        expect(analyzeArray([1,8,3,4,2,6]).min).toBe(1);
     });
 
     it('returns the size of the array', ()=>{
-        expect(analyzeArray([1,8,3,4,2,6].length)).toBe(6);
+        expect(analyzeArray([1,8,3,4,2,6]).length).toBe(6);
     });
 });
 

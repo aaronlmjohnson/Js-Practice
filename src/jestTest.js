@@ -25,8 +25,13 @@ export const caesarCipher = (str, shift = 1)=>{
     }).join('');
 };
 
-export const analyzeArray = ()=>{
-
+export const analyzeArray = (arr)=>{
+    return {
+        average: (arr.reduce((total, num)=> total+num, 0) / arr.length),
+        min: Math.min(...arr),
+        max: Math.max(...arr),
+        length: arr.length
+    }
 };
 
 const charToNum = (char)=> 
